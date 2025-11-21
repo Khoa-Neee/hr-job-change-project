@@ -93,19 +93,25 @@ Nếu không dùng Conda, có thể dùng `python -m venv .venv` và kích hoạ
 Thứ tự đề xuất:
 1. `notebooks/01_data_exploration.ipynb` – khám phá và trực quan hóa dữ liệu thô.
 2. `notebooks/02_preprocessing.ipynb` – tiền xử lý + lưu dữ liệu đã chuẩn hóa và tách tập:
-   - Kết quả trong `data/processed/`: `X_train.npy`, `y_train.npy`, `X_test.npy`, `y_test.npy`, `preprocessing_info.pkl`, ...
+   - Kết quả trong `data/processed/`: `X_train.npy`, `y_train.npy`, `X_test.npy`, `y_test.npy`.
 3. `notebooks/03_modeling.ipynb` – huấn luyện Logistic Regression (NumPy) và đánh giá trên test:
    - In các chỉ số: Accuracy, Precision, Recall, F1.
    - Vẽ learning curves (loss/accuracy theo iteration).
-   - Lưu trọng số `lr_weights.npy` và dự đoán nếu cần.
-
 ---
 
 ## Results
 Ví dụ một lần chạy (các con số có thể thay đổi tùy cấu hình features và seed):
 
-- Train (tham khảo): Accuracy ~ 0.77
-- Test (đánh giá): báo cáo đầy đủ Accuracy/Precision/Recall/F1 được in ở cuối notebook `03_modeling.ipynb`.
+1. Train (tham khảo):
+  - Accuracy       : 0.7781
+  - Precision      : 0.5782
+  - Recall         : 0.4071
+  - F1             : 0.4778
+2. Test (đánh giá): 
+  - Accuracy       : 0.7753
+  - Precision      : 0.5673
+  - Recall         : 0.4147
+  - F1             : 0.4791
 
 Trực quan:
 - Learning curves thể hiện hội tụ ổn định.
